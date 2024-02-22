@@ -1,0 +1,17 @@
+.taskCell {
+  border-inline-start: 1px solid currentColor;
+  border-block-end: 1px solid currentColor;
+  padding-inline-start: 0.25rem;
+  padding-inline-end: 0.25rem;
+}
+
+.taskCell.is-active::before {
+  content: "(Sin tìtulo)";
+  display: block;
+  border-radius: 0.25rem;
+  color: var(--white);
+  background: #2673f8;
+  padding: 0.25rem;
+  box-shadow: 0px 0px 5px 3px rgb(0, 0, 0, 0.2);
+  font-size: small;
+}

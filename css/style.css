@@ -1,4 +1,6 @@
 @import "./icons.css";
+@import "./page.css";
+@import "./calendar.css";
 
 :root {
   --white: #fffffe;

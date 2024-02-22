@@ -1,0 +1,24 @@
+:root {
+  --inlineSidebar: 15.25rem;
+  --blockHeader: 6rem;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: var(--inlineSidebar) 1fr;
+  grid-template-rows: var(--blockHeader) 1fr;
+  grid-template-areas: "header header" "sidebar calendar";
+  block-size: 100vh;
+}
+
+.page .header {
+  grid-area: header;
+}
+
+.page .sidebar {
+  grid-area: sidebar;
+}
+
+.page .calenda {
+  grid-area: calendar;
+}
