@@ -1,0 +1,19 @@
+.user {
+  display: block;
+  inline-size: 2rem;
+  block-size: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.user-me {
+  block-size: 100%;
+  background: purple;
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

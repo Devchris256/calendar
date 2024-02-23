@@ -1,8 +1,11 @@
 @import "./icons.css";
+@import "./button.css";
 @import "./page.css";
 @import "./calendar.css";
+@import "./header.css";
 
 :root {
+  font-size: 16px;
   --white: #fffffe;
   --gray50: #222222;
   --gray20: #70757a;

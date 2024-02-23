@@ -1,0 +1,87 @@
+.button {
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+  border-radius: 0.25rem;
+  color: var(--gray30);
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: transparent;
+  font: var(--button-button);
+  outline: none;
+}
+
+.button.is-primary {
+  border-color: var(--gray20);
+}
+
+.button.is-secondary {
+  background: var(--blue10);
+  color: var(--white);
+  padding-inline: 1rem;
+}
+
+.button.is-round {
+  padding-inline: 1rem;
+  border-radius: 1.25rem;
+  border-color: var(--gray10);
+  box-shadow: 2px 2px 3px 3px rgba(99, 99, 99, 0.1);
+}
+
+.button.is-round span {
+  margin-inline-start: 0.25rem;
+  color: var(--blue10);
+}
+
+.button.is-compact {
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.button.is-compact .icon-chevron-left {
+  position: relative;
+  inset-inline-end: 2px;
+  inset-block-start: 1px;
+}
+
+.button.is-compact .icon-chevron-right {
+  position: relative;
+  inset-inline-start: 2px;
+  inset-block-start: 1px;
+}
+
+.button i {
+  font-size: 1.5rem;
+}
+
+.button i,
+.button span {
+  vertical-align: middle;
+}
+
+/* estados */
+
+.button.is-primary,
+.button.is-compact {
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.button.is-primary:hover,
+.button.is-primary:focus,
+.button.is-compact:hover,
+.button.is-compact:focus {
+  background: var(--gray10);
+  box-shadow: 1px 1px 2px 2px rgba(99, 99, 99, 0.1);
+}
+
+.button.is-secondary {
+  transition: background 0.3s;
+}
+
+.button.is-secondary:hover,
+.button.is-secondary:focus {
+  background: var(--blue30);
+}
+
+.button.is-round:hover {
+  box-shadow: 5px 5px 10px 1px rgba(99, 99, 99, 0.2);
+}

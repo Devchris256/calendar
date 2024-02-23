@@ -6,14 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Google Calendar</title>
 </head>
 
 <body>
     <div class="page">
-        <header class="header"></header>
+        <header class="header">
+            <div class="header-content">
+                <div class="header-primary">
+                    <div class="header-logo">
+                        <button class="button is-compact" aria-label="Menu" title="Menu Principal">
+                            <i class="icon-hamburguer-button" aria-hidden="true"></i>
+                        </button>
+                        <img src="./img/logo.svg" alt="Logo de Google Calendar" width="163" height="48">
+                    </div> <!-- header logo -->
+                    <div class="header-actions">
+                        <button class="button is-primary" aria-label="Jueves, 22 de Febrero" title="Jueves, 22 de Febrero">Hoy</button>
+                        <div class="navegation">
+                            <button class="button is-compact" aria-label="Semana anterior" title="Semana anterior">
+                                <i class="icon-chevron-left" aria-hidden="true"></i>
+                            </button>
+                            <button class="button is-compact" aria-label="proxima semana" title="Proxima semana">
+                                <i class="icon-chevron-right" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <time datetime="02-2024" class="header-date">Febrero del 2024</time>
+                    </div> <!-- header actions -->
+                </div> <!-- header primary -->
+                <div class="header-secondary">
+                    <button class="button is-compact" aria-label="buscar" title="Buscar">
+                        <i class="icon-search" aria-hidden="true"></i>
+                    </button>
+                    <button class="button is-compact" aria-label="Ayuda" title="Ayuda">
+                        <i class="icon-help-circle" aria-hidden="true"></i>
+                    </button>
+                    <button class="button is-compact" aria-label="menu configuracion" title="Menú Configuración">
+                        <i class="icon-settings" aria-hidden="true"></i>
+                    </button>
+                    <div class="select" tabindex="0">
+                        <span>Semana</span>
+                        <div class="select-options">
+                            <a href="./index.html">Semana</a>
+                            <a href="./dia.html">Dia</a>
+                        </div>
+                    </div>
+                    <div class="change">
+                        <a href="./index.html" class="change-option" aria-current="page" aria-label="Cambiar a Calendar" title="Cambiar a Calendar">
+                            <i class="icon-calendar" aria-hidden="true"></i>
+                        </a>
+                        <a href="./task.html" class="change-option" aria-label="Ir a Task" title="Cambiar a Calendar">
+                            <i class="icon-check-square" aria-hidden="true"></i>
+                        </a>
+                    </div> <!-- change -->
+                    <div class="user">
+                        <div class="user-me">
+                            <span>C</span>
+                        </div>
+                    </div>
+                </div> <!-- header secondary -->
+            </div>
+        </header>
         <div class="aside"></div>
         <main class="calendar">
             <div class="calendar-week">

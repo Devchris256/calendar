@@ -1,0 +1,53 @@
+@import "./select.css";
+@import "./change.css";
+@import "./user.css";
+
+.header {
+  position: relative;
+}
+
+.header-content {
+  block-size: 100%;
+  padding-inline: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  border-block-end: 1px solid var(--gray10);
+
+  /* --- */
+  position: fixed;
+  z-index: 2;
+  inline-size: 100%;
+  block-size: var(--blockHeader);
+  box-sizing: border-box;
+  background: var(--white);
+}
+
+.header-primary {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-date {
+  font: var(--subtitle-subtitle1);
+}
+
+.header-secondary {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

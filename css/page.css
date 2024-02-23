@@ -9,6 +9,7 @@
   grid-template-rows: var(--blockHeader) 1fr;
   grid-template-areas: "header header" "sidebar calendar";
   block-size: 100vh;
+  position: relative;
 }
 
 .page .header {
