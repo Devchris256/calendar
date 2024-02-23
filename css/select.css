@@ -26,33 +26,6 @@
   background: var(--gray10);
 }
 
-.select-options {
-  position: absolute;
-  inset-block-start: 100%;
-  margin-block-start: 0.25rem;
-  inset-inline-start: 0;
-  z-index: 1;
-  inline-size: 100%;
-  padding-block: 0.75rem;
-  background: var(--white);
+.select:hover .options {
   display: flex;
-  flex-direction: column;
-  border: 1px solid var(--gray10);
-  box-shadow: 0px 0px 10px 1px rgb(0, 0, 0, 0.2);
-  display: none;
-}
-
-.select:hover .select-options {
-  display: flex;
-}
-
-.select-options a {
-  color: var(--gray50);
-  text-decoration: none;
-  padding: 0.75rem;
-  transition: background 0.3s;
-}
-
-.select-options a:hover {
-  background: var(--gray10);
 }

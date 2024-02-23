@@ -1,0 +1,24 @@
+@import "./mini-calendar.css";
+@import "./search.css";
+@import "./my-calendars.css";
+
+.aside {
+  position: relative;
+}
+
+.aside-container {
+  position: sticky;
+  inset-block-start: 6rem;
+}
+
+.aside-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-block-start: 1.5rem;
+  align-items: flex-start;
+}
+
+.aside-content.wrapper {
+  padding-inline: 1.5rem;
+}

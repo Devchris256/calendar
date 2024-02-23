@@ -1,0 +1,38 @@
+.myCalendars {
+  inline-size: 100%;
+  font: var(--body1-regular);
+  color: var(--gray30);
+  padding-block: 0.25rem;
+  padding-inline: 1.5rem;
+  box-sizing: border-box;
+}
+
+.myCalendars summary {
+  list-style: none;
+  position: relative;
+}
+
+.myCalendars summary::after {
+  content: url(../img/chevron-down.svg);
+  display: block;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  object-fit: cover;
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+}
+
+.myCalendars-option input {
+  display: inline-block;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  appearance: none;
+  background: url(../img/square.svg) no-repeat center/cover;
+  vertical-align: middle;
+}
+
+.myCalendars-option input:checked {
+  background: url(../img/check-square.svg) no-repeat center/cover;
+}

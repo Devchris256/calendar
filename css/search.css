@@ -1,0 +1,36 @@
+.search {
+  padding-block: 0.625rem;
+  padding-inline: 1rem;
+  padding-inline-start: 2.5rem;
+  background: var(--gray10);
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+}
+
+.search::after {
+  content: url(../img/user.svg);
+  display: inline-block;
+  inline-size: 1rem;
+  block-size: 1rem;
+  object-fit: cover;
+  color: var(--gray20);
+  margin-inline-end: 0.5rem;
+  position: absolute;
+  inset-inline-start: 1rem;
+  inset-block-start: 50%;
+  transform: translateY(-50%);
+}
+
+.search:hover {
+  box-shadow: inset 0px -2px var(--blue10);
+}
+
+.search-input {
+  font: var(--body1-regular);
+  background: var(--gray10);
+  color: var(--gray20);
+  border: none;
+  outline: none;
+  inline-size: 100%;
+}

@@ -22,7 +22,8 @@
 
 /* estadoa */
 
-.change-option:hover:not(.change-option[aria-current="page"]) {
+.change-option:hover:not(.change-option[aria-current="page"]),
+.change-option:focus:not(.change-option[aria-current="page"]) {
   background: var(--gray10);
 }
 

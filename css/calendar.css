@@ -9,7 +9,7 @@
   --minBlocksize: 4rem;
   --maxBlocksize: auto;
   --minInlinesize: 5rem;
-  --maxInlinesize: 10rem;
+  --maxInlinesize: 1fr;
   color: var(--gray20);
   position: relative;
 }

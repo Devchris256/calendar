@@ -1,0 +1,69 @@
+.miniCalendar {
+  inline-size: 100%;
+  --cellSize: 1.75rem;
+}
+
+.miniCalendar-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.miniCalendar-time {
+  font: var(--body1-medium);
+  color: var(--gray30);
+}
+
+.miniCalendar-head {
+  display: grid;
+  grid-template-columns: repeat(7, var(--cellSize));
+  grid-template-rows: var(--cellSize);
+  align-content: center;
+}
+
+.miniCalendar-day {
+  font: var(--body3-regular);
+  line-height: var(--cellSize);
+  color: var(--gray30);
+  text-align: center;
+  cursor: pointer;
+}
+
+.miniCalendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, var(--cellSize));
+  grid-template-rows: repeat(6, var(--cellSize));
+  align-content: center;
+}
+
+.miniCalendar-number {
+  font: var(--body3-regular);
+  color: var(--gray30);
+  text-align: center;
+  line-height: var(--cellSize);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.miniCalendar-number.is-montPrev,
+.miniCalendar-number.is-montNext {
+  color: var(--gray20);
+}
+
+.miniCalendar-number[aria-current="date"] {
+  color: var(--white);
+  background: var(--blue10);
+}
+
+/* estados */
+
+.miniCalendar-number:not(.miniCalendar-number[aria-current="date"]):hover {
+  background: var(--gray10);
+}
+
+.miniCalendar-number[aria-current="date"]:hover,
+.miniCalendar-number[aria-current="date"]:focus {
+  background: var(--blue30);
+  outline: none;
+}

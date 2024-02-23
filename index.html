@@ -47,7 +47,7 @@
                     </button>
                     <div class="select" tabindex="0">
                         <span>Semana</span>
-                        <div class="select-options">
+                        <div class="options">
                             <a href="./index.html">Semana</a>
                             <a href="./dia.html">Dia</a>
                         </div>
@@ -68,7 +68,111 @@
                 </div> <!-- header secondary -->
             </div>
         </header>
-        <div class="aside"></div>
+        <div class="aside">
+            <div class="aside-container">
+                <div class="aside-content wrapper">
+                    <button class="button is-round" aria-label="Crear evento, tarea ó citas">
+                        <i class="icon-plus" aria-hidden="true"></i>
+                        <span>Crear</span>
+                        <div class="options is-secondary">
+                            <a href="#">Evento</a>
+                            <a href="#">Tarea</a>
+                            <a href="#">Calendario de citas</a>
+                        </div>
+                    </button>
+                    <div class="miniCalendar">
+                        <div class="miniCalendar-status">
+                            <time datetime="02-2024" class="miniCalendar-time">Febreo 2024</time>
+                            <div class="navegation">
+                                <button class="button is-compact" aria-label="mes anterior" title="Mes anterior">
+                                    <i class="icon-chevron-left" aria-hidden="true"></i>
+                                </button>
+                                <button class="button is-compact" aria-label="Mes siguiente" title="Mes siguiente">
+                                    <i class="icon-chevron-right" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="miniCalendar-head">
+                            <span class="miniCalendar-day" title="Domingo">D</span>
+                            <span class="miniCalendar-day" title="Lunes">L</span>
+                            <span class="miniCalendar-day" title="Martes">M</span>
+                            <span class="miniCalendar-day" title="Miercoles">X</span>
+                            <span class="miniCalendar-day" title="Jueves">J</span>
+                            <span class="miniCalendar-day" title="Viernes">V</span>
+                            <span class="miniCalendar-day" title="Sabado">S</span>
+                        </div>
+                        <div class="miniCalendar-body">
+                            <span class="miniCalendar-number is-montPrev">28</span>
+                            <span class="miniCalendar-number is-montPrev">29</span>
+                            <span class="miniCalendar-number is-montPrev">30</span>
+                            <span class="miniCalendar-number is-montPrev">31</span>
+                            <span class="miniCalendar-number">1</span>
+                            <span class="miniCalendar-number">2</span>
+                            <span class="miniCalendar-number">3</span>
+                            <span class="miniCalendar-number">4</span>
+                            <span class="miniCalendar-number">5</span>
+                            <span class="miniCalendar-number">6</span>
+                            <span class="miniCalendar-number">7</span>
+                            <span class="miniCalendar-number">8</span>
+                            <span class="miniCalendar-number">9</span>
+                            <span class="miniCalendar-number">10</span>
+                            <span class="miniCalendar-number">11</span>
+                            <span class="miniCalendar-number">12</span>
+                            <span class="miniCalendar-number">13</span>
+                            <span class="miniCalendar-number">14</span>
+                            <span class="miniCalendar-number">15</span>
+                            <span class="miniCalendar-number">16</span>
+                            <span class="miniCalendar-number">17</span>
+                            <span class="miniCalendar-number">18</span>
+                            <span class="miniCalendar-number">19</span>
+                            <span class="miniCalendar-number">20</span>
+                            <span class="miniCalendar-number">21</span>
+                            <span class="miniCalendar-number" aria-current="date" tabindex="0">22</span>
+                            <span class="miniCalendar-number">23</span>
+                            <span class="miniCalendar-number">24</span>
+                            <span class="miniCalendar-number">25</span>
+                            <span class="miniCalendar-number">26</span>
+                            <span class="miniCalendar-number">27</span>
+                            <span class="miniCalendar-number">28</span>
+                            <span class="miniCalendar-number">29</span>
+                            <span class="miniCalendar-number is-montNext">1</span>
+                            <span class="miniCalendar-number is-montNext">2</span>
+                            <span class="miniCalendar-number is-montNext">3</span>
+                            <span class="miniCalendar-number is-montNext">4</span>
+                            <span class="miniCalendar-number is-montNext">5</span>
+                            <span class="miniCalendar-number is-montNext">6</span>
+                            <span class="miniCalendar-number is-montNext">7</span>
+                            <span class="miniCalendar-number is-montNext">8</span>
+                            <span class="miniCalendar-number is-montNext">9</span>
+                        </div>
+                    </div> <!-- mini calendar -->
+                    <form action="" class="search">
+                        <input type="email" placeholder="Buscar personas" class="search-input">
+                    </form>
+                </div> <!-- aside content -->
+                <div class="aside-content">
+                    <details class="myCalendars">
+                        <summary>Mis Calendarios</summary>
+                        <div class="myCalendars-option">
+                            <input type="checkbox">
+                            <span>Sarai Atoche</span>
+                        </div>
+                        <div class="myCalendars-option">
+                            <input type="checkbox">
+                            <span>Cumpleaños</span>
+                        </div>
+                        <div class="myCalendars-option">
+                            <input type="checkbox">
+                            <span>Tareas</span>
+                        </div>
+                        <div class="myCalendars-option">
+                            <input type="checkbox">
+                            <span>Recordatorios</span>
+                        </div>
+                    </details>
+                </div>
+            </div> <!-- aside container -->
+        </div> <!-- aside -->
         <main class="calendar">
             <div class="calendar-week">
                 <div class="timezoneCell">
