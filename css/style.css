@@ -5,6 +5,7 @@
 @import "./calendar.css";
 @import "./header.css";
 @import "./aside.css";
+@import "./modal.css";
 
 :root {
   font-size: 16px;

@@ -174,6 +174,7 @@
             </div> <!-- aside container -->
         </div> <!-- aside -->
         <main class="calendar">
+            <div class="currentTime"></div>
             <div class="calendar-week">
                 <div class="timezoneCell">
                     <span>GTM-05</span>
@@ -555,6 +556,102 @@
             </div> <!-- calendar week -->
         </main> <!-- calendar -->
     </div> <!-- page -->
+    <dialog class="modal">
+        <form action="" class="form">
+            <input type="radio" name="change" id="evento" checked>
+            <input type="radio" name="change" id="tarea">
+            <input type="radio" name="change" id="cita">
+            <div class="form-head">
+                <div class="form-title">
+                    <input type="text" placeholder="Añade título">
+                </div>
+                <div class="form-change">
+                    <div class="form-labelList">
+                        <label for="evento">Evento</label>
+                        <label for="tarea">Tarea</label>
+                        <label for="cita">Calendario cita</label>
+                    </div>
+                </div>
+            </div> <!-- form head -->
+            <div class="form-body">
+                <div class="createEvent">
+                    <div class="createEvent-block">
+                        <i class="icon-clock" aria-hidden="true"></i>
+                        <div class="createEvent-body">
+                            <input type="datetime-local" name="" id="" required>
+                        </div>
+                    </div>
+                    <div class="createEvent-block">
+                        <i class="icon-users" aria-hidden="true"></i>
+                        <div class="createEvent-body">
+                            <input type="search" name="" id="" placeholder="Añade invitados" required>
+                        </div>
+                    </div>
+                    <div class="createEvent-block">
+                        <i class="icon-video" aria-hidden="true"></i>
+                        <div class="createEvent-body">
+                            <button class="button is-secondary is-small">Agrega una videoconferencia en Google Meet</button>
+                        </div>
+                    </div>
+                    <div class="createEvent-block">
+                        <i class="icon-gps" aria-hidden="true"></i>
+                        <div class="createEvent-body">
+                            <input type="text" name="" id="" placeholder="Agrega lugar" required>
+                        </div>
+                    </div>
+                    <div class="createEvent-block">
+                        <i class="icon-text" aria-hidden="true"></i>
+                        <div class="createEvent-body">
+                            <input type="file" name="" id="">
+                        </div>
+                    </div>
+                    <div class="createEvent-block">
+                        <i class="icon-text" aria-hidden="true"></i>
+                        <div class="createEvent-body">
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Agrega descripción"></textarea>
+                        </div>
+                    </div>
+                </div> <!-- create event -->
+                <div class="createTask">
+                    <div class="createTask-block">
+                        <i class="icon-clock" aria-hidden="true"></i>
+                        <div class="createTask-body">
+                            <input type="datetime-local" name="" id="" required>
+                        </div>
+                    </div>
+                    <div class="createTask-block">
+                        <i class="icon-text" aria-hidden="true"></i>
+                        <div class="createTask-body">
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Agrega descripción" required></textarea>
+                        </div>
+                    </div>
+                </div> <!-- create task -->
+                <div class="createDate">
+                    <div class="createDate-block">
+                        <i class="icon-clock" aria-hidden="true"></i>
+                        <div class="createDate-body">
+                            <input type="datetime-local" name="" id="">
+                        </div>
+                    </div>
+                    <div class="createDate-block">
+                        <i class="icon-help-circle" aria-hidden="true"></i>
+                        <div class="createDate-body">
+                            <p>Crea una página de reserva y compártela con otros para que puedan reservar citas contigo</p>
+                            <div class="createDate-actions">
+                                <button class="createDate-button is-primary">Consulta cómo Funciona</button>
+                                <button class="createDate-button is-secondary">Más información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- create date -->
+            </div> <!-- form body -->
+        </form> <!-- form -->
+        <div class="modal-actions">
+            <button class="button">Cancelar</button>
+            <button class="button is-secondary">Guardar</button>
+        </div> <!-- modal actions -->
+    </dialog> <!-- modal -->
+    <script>document.querySelector('.modal').showModal()</script>
 </body>
 
 </html>

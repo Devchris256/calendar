@@ -1,0 +1,81 @@
+@import "./create-event.css";
+@import "./create-task.css";
+@import "./create-date.css";
+
+.form input[type="radio"] {
+  display: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  user-select: none;
+}
+
+.form-title,
+.form-change {
+  padding-inline-start: 1.5rem;
+}
+
+.form-title :only-child,
+.form-change :only-child {
+  inline-size: 100%;
+}
+
+.form-title {
+  margin-block-end: 1rem;
+}
+
+.form-title input {
+  font: var(--subtitle-subtitle1);
+  color: var(--gray50);
+  padding-block: 0.25rem;
+  box-shadow: inset 0px -2px var(--gray10);
+  border: none;
+  outline: none;
+  transition: box-shadow 0.5s;
+}
+
+.form-title input:hover {
+  box-shadow: inset 0px -1px var(--blue10);
+  outline: none;
+}
+
+/* --------------- */
+
+.form-labelList {
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 0.5rem;
+}
+
+.form-labelList label {
+  color: var(--gray20);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.form-labelList label:hover {
+  background: var(--gray10);
+}
+
+input[id="evento"]:checked ~ .form-head label[for="evento"],
+input[id="tarea"]:checked ~ .form-head label[for="tarea"],
+input[id="cita"]:checked ~ .form-head label[for="cita"] {
+  color: var(--blue10);
+  background: rgb(205, 234, 243);
+}
+
+input[id="evento"]:checked ~ .form-body .createEvent {
+  display: flex;
+}
+
+input[id="tarea"]:checked ~ .form-body .createTask {
+  display: flex;
+}
+
+input[id="cita"]:checked ~ .form-body .createDate {
+  display: flex;
+}

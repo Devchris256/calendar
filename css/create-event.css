@@ -1,0 +1,41 @@
+.createEvent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+}
+
+.createEvent-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.createEvent-block i {
+  font-size: 1.5rem;
+  color: var(--gray50);
+}
+
+.createEvent-body {
+  flex-grow: 1;
+}
+
+.createEvent-body input,
+.createEvent-body textarea {
+  border: 1px solid var(--gray10);
+  outline: none;
+  inline-size: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+}
+
+.createEvent-body textarea {
+  resize: none;
+}
+
+.createEvent-block input:hover {
+  background: var(--gray10);
+}

@@ -1,0 +1,41 @@
+.createTask {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+}
+
+.createTask-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.createTask-block i {
+  font-size: 1.5rem;
+  color: var(--gray50);
+}
+
+.createTask-body {
+  flex-grow: 1;
+}
+
+.createTask-body input,
+.createTask-body textarea {
+  border: 1px solid var(--gray10);
+  outline: none;
+  inline-size: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+}
+
+.createTask-body textarea {
+  resize: none;
+}
+
+.createTask-block input:hover {
+  background: var(--gray10);
+}

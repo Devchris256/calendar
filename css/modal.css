@@ -1,0 +1,27 @@
+@import "./form.css";
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  position: absolute;
+  inset-inline-start: 200px;
+  inset-block-start: 200px;
+  max-inline-size: 28rem;
+  inline-size: 100%;
+  border-radius: 0.25rem;
+  padding-block: 1.5rem;
+  padding-inline: 3rem;
+  box-sizing: border-box;
+  box-shadow: 1.0719px 30.9815px 92px rgb(0, 0, 0, 0.6);
+  border: none;
+}
+
+.modal::backdrop {
+  background: rgb(0, 0, 0, 0.3);
+}
+
+.modal-actions {
+  align-self: flex-end;
+}

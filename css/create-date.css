@@ -1,0 +1,62 @@
+.createDate {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+}
+
+.createDate-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.createDate-block i {
+  font-size: 1.5rem;
+  color: var(--gray50);
+}
+
+.createDate-body {
+  flex-grow: 1;
+}
+
+.createDate-body input {
+  border: 1px solid var(--gray10);
+  outline: none;
+  inline-size: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background 0.3s;
+}
+
+.createDate-block input:hover {
+  background: var(--gray10);
+}
+
+.createDate-button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+.createDate-button.is-primary {
+  color: var(--blue10);
+  transition: background 0.3s;
+}
+
+.createDate-button.is-secondary {
+  color: var(--gray50);
+  transition: background 0.3s;
+}
+
+.createDate-button.is-primary:hover {
+  background: rgb(204, 231, 240);
+}
+
+.createDate-button.createDate-button.is-secondary:hover {
+  background: var(--gray10);
+}
