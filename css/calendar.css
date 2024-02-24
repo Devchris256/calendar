@@ -28,3 +28,12 @@
   padding-inline: 1.5rem;
   min-block-size: var(--blocksize);
 }
+
+.calendar-day {
+  display: grid;
+  grid-template-columns: auto minmax(var(--minInlinesize), var(--maxInlinesize));
+  grid-template-rows: 7rem repeat(
+      24,
+      minmax(var(--minBlocksize), var(--maxBlocksize))
+    );
+}

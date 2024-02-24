@@ -3,7 +3,6 @@
   inline-size: 5rem;
   max-inline-size: 100%;
   block-size: 1px;
-  z-index: 2;
   background: var(--red10);
   inset-block-start: 200px;
   inset-inline-start: 220px;
