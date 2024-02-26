@@ -8,6 +8,7 @@ Este proyecto, inspirado en el calendario de Google, es una aplicación web que 
 - Interfaz de usuario limpia y amigable.
 - Ventana modal para una mejor experiencia de usuario al interactuar con eventos.
 - Favicon incluido para una identificación visual rápida.
+- Dark mode para mayor accesibilidad
 
 ## Limitaciones ⚠️
 
