@@ -29,6 +29,7 @@
   padding-inline: 0.5rem;
   padding-block: 0.5rem;
   border-radius: 0.25rem;
+  background: var(--white);
   transition: background 0.3s;
 }
 

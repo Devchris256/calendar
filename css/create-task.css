@@ -30,6 +30,7 @@
   padding-block: 0.5rem;
   border-radius: 0.25rem;
   transition: background 0.3s;
+  background: var(--white);
 }
 
 .createTask-body textarea {

@@ -31,4 +31,22 @@
 body {
   margin: 0;
   font: var(--body1-regular);
+  background: var(--black);
+  color: var(--gray50);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --white: #222222;
+    --gray50: #fffffe;
+    --gray30: #f1f3f4;
+    --gray20: #9e9fa1;
+    --gray10: #c4c5c7;
+    --gray10: #6c6f71;
+    --blue10: #1a73e8;
+    --blue20: #039be5;
+    --red10: #e8453c;
+    --green10: #33b679;
+    --blue30: #1967d2;
+  }
 }

@@ -4,6 +4,7 @@
 
 .aside {
   position: relative;
+  background: var(--white);
 }
 
 .aside-container {

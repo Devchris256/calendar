@@ -27,6 +27,7 @@
     );
   padding-inline: 1.5rem;
   min-block-size: var(--blocksize);
+  background: var(--white);
 }
 
 .calendar-day {

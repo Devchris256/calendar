@@ -35,6 +35,7 @@
   border: none;
   outline: none;
   transition: box-shadow 0.5s;
+  background: var(--white);
 }
 
 .form-title input:hover {
@@ -45,7 +46,6 @@
 /* --------------- */
 
 .form-labelList {
-  /* border: 1px solid red; */
   display: flex;
   gap: 0.5rem;
 }

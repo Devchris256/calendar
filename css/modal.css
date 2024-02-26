@@ -15,6 +15,7 @@
   box-sizing: border-box;
   box-shadow: 1.0719px 30.9815px 92px rgb(0, 0, 0, 0.6);
   border: none;
+  background: var(--white);
 }
 
 .modal[open] {
